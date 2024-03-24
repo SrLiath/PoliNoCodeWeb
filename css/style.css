@@ -1028,20 +1028,49 @@ a:focus {
 /*
 Login section
 */
+/* Estilo do login */
 .login_section {
-  padding: 60px 0;
+  padding: 90px 0;
 }
 
-.form_container {
+.login_container {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+.login_heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login_heading_container h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.login_row {
+  display: flex;
+  justify-content: center;
+}
+
+.login_col-md-8,
+.login_col-lg-6 {
+  margin: auto;
+}
+
+.login_form_container {
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.form_container input[type="email"],
-.form_container input[type="password"] {
-  width: 100%;
+.login_form_container form input[type="email"],
+.login_form_container form input[type="password"] {
+  width: calc(100% - 22px); 
   min-width: 250px;
   padding: 10px;
   margin-bottom: 20px;
@@ -1049,11 +1078,11 @@ Login section
   border-radius: 5px;
 }
 
-.btn_box {
+.login_btn_box {
   text-align: center;
 }
 
-.btn_box button {
+.login_btn_box button {
   padding: 10px 30px;
   background-color: #007bff;
   color: #fff;
@@ -1063,26 +1092,225 @@ Login section
   transition: background-color 0.3s ease;
 }
 
-.btn_box button:hover {
+.login_btn_box button:hover {
   background-color: #ff4646;
 }
 
-.register_link {
+.login_link {
   text-align: center;
   margin-top: 20px;
 }
 
-.register_link a {
+.login_link a {
   color: #007bff;
   text-decoration: underline;
 }
 
-.register_link a:hover {
+.login_link a:hover {
   color: #ff4646;
 }
 
 /*
 End Login section
+*/
+
+/*
+Register section
+*/
+
+.register_section {
+  padding: 90px 0;
+}
+
+.register_container {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.register_heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.register_heading_container h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.register_row {
+  display: flex;
+  justify-content: center;
+}
+
+.register_col-md-8,
+.register_col-lg-6 {
+  margin: auto;
+}
+
+.register_form_container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.register_form_container form input[type="text"],
+.register_form_container form input[type="email"],
+.register_form_container form input[type="password"] {
+  width: calc(100% - 22px); 
+  min-width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register_btn_box {
+  text-align: center;
+}
+
+.register_btn_box button {
+  padding: 10px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register_btn_box button:hover {
+  background-color: #ff4646;
+}
+
+.login_link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login_link a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.login_link a:hover {
+  color: #ff4646;
+}
+
+/*
+End register section
+*/
+/*
+sale section
+*/
+.purchase_section {
+  padding: 90px 0;
+}
+
+.purchase_container {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.purchase_heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.purchase_heading_container h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.purchase_row {
+  display: flex;
+  justify-content: center;
+}
+
+.purchase_col-md-8,
+.purchase_col-lg-6 {
+  margin: auto;
+}
+
+.purchase_form_container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.purchase_form_container form input[type="text"] {
+  width: calc(100% - 22px); 
+  min-width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.purchase_btn_box {
+  text-align: center;
+}
+
+.purchase_btn_box button {
+  padding: 10px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.purchase_btn_box button:hover {
+  background-color: #ff4646;
+}
+/*
+End sale section
+*/
+
+/*
+Panel section
+*/
+
+.selection_panel {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  padding: 20px;
+  z-index: 1000;
+}
+.selection_panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection_panel ul li {
+  margin-bottom: 10px;
+}
+
+.selection_panel ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.selection_panel ul li a:hover {
+  color: #007bff;
+}
+/*
+End Panel section
 */
 
 /* footer section*/
