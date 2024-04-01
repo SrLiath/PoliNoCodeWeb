@@ -1276,120 +1276,15 @@ End sale section
 */
 
 /*Workspace*/
-
-.selection_panel_container_workspace {
-  display: flex;
-  top: 50px;
-  left: 0;
-  width: 200px;
-  background-color: #f8f9fa;
-  border-right: 1px solid #dee2e6;
-  padding: 20px;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: width 0.3s ease;
-  border-radius: 10px;
-}
-
-.selection_panel_container_workspace ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.selection_panel_container_workspace ul li {
-  margin-bottom: 10px;
-}
-
-.selection_panel_container_workspace ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s ease;
-  border-radius: 5px;
-  padding: 5px;
-  white-space: nowrap;
-}
-
-.selection_panel_container_workspace ul li a:hover {
-  color: #007bff;
-  background-color: #e9ecef;
-}
-.container_custom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.heading_container_custom {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.price_container_custom {
+.image_center {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  padding: 0 0 0 300px;
 }
-
-.box_custom {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.box_custom:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-.box_custom .detail-box_custom {
-  margin-bottom: 20px;
-}
-
-.box_custom .detail-box_custom h2 {
-  color: #007bff;
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
-.box_custom .detail-box_custom h6 {
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.box_custom .price_features_custom {
-  list-style: none;
-  padding: 0;
-}
-
-.box_custom .price_features_custom li {
-  margin-bottom: 10px;
-}
-
-.box_custom .btn-box_custom {
-  margin-top: 20px;
-}
-
-.box_custom .btn-box_custom a {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.box_custom .btn-box_custom a:hover {
-  background-color: #0056b3;
-}
-
 /*End Workspace*/
+
+
 
 /*
 sale section
