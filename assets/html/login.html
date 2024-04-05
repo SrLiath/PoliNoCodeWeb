@@ -33,9 +33,12 @@
     <link href="../css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="../css/responsive.css" rel="stylesheet" />
+
+    <!-- File JavaScript -->
+    <script src="../js/login.js"></script>
   </head>
 
-  <body class="sub_page">
+  <body class="sub_page" onload="exibirMensagemErro()">
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
@@ -57,7 +60,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class=""> </span>
+              <span class=""></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -106,17 +109,28 @@
         <div class="login_row">
           <div class="login_col-md-8 login_col-lg-6">
             <div class="login_form_container">
-              <form action="">
+              <form id="loginForm" method="post" action="/login">
                 <div>
-                  <input type="email" placeholder="Seu E-mail" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Seu E-mail"
+                    required
+                  />
                 </div>
                 <div>
-                  <input type="password" placeholder="Senha" required />
+                  <input
+                    type="password"
+                    name="senha"
+                    placeholder="Senha"
+                    required
+                  />
                 </div>
                 <div class="login_btn_box">
                   <button type="submit">Entrar</button>
                 </div>
               </form>
+
               <div class="login_link">
                 <a href="../html/register.html"
                   >Ainda não tem uma conta? Cadastre-se aqui</a
