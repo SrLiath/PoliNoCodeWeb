@@ -1,3 +1,3 @@
 # PoliNoCode Web
 
-Site para venda da aplicação de automação de sistemas PoliBot.
+Website para comercialização da aplicação de automação de sistemas PoliBot.
