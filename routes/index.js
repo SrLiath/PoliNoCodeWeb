@@ -70,8 +70,27 @@ router.get('/seeregistration', (req, res) => {
 
 // Rota para lidar com chaves (seekeys)
 router.get('/seekeys', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'seekeys.html'));
+    // Verificar se o usuário está autenticado
+    if (!req.session.authenticated) {
+        return res.status(401).send('Acesso não autorizado');
+    }
+
+    // Obter o ID do usuário da sessão
+    const usuario_id = req.session.user.id;
+
+    // Consultar o banco de dados para obter as chaves do usuário
+    pool.query('SELECT chave, compra, expiracao_key FROM tb_key WHERE usuario_id = ?', [usuario_id], (err, results) => {
+        if (err) {
+            console.error('Erro ao consultar chaves do usuário:', err);
+            return res.status(500).send('Erro interno do servidor');
+        }
+
+        // Enviar os dados das chaves como resposta em formato JSON
+        res.json(results);
+    });
 });
+
+
 
 // Rota para lidar com o envio do formulário de registro
 router.post('/register', (req, res) => {

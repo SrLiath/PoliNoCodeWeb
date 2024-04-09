@@ -33,6 +33,8 @@
     <link href="../css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="../css/responsive.css" rel="stylesheet" />
+
+    <script src="../js/chaves.js"></script>
   </head>
 
   <body class="sub_page">
@@ -88,6 +90,7 @@
     <!-- end header section -->
 
     <!-- workspace section -->
+
     <section class="selection_panel">
       <div class="selection_panel_container">
         <ul>
@@ -97,7 +100,19 @@
           <li><a href="/sale">Adquirir Plano</a></li>
         </ul>
       </div>
-      <div class=""></div>
+      <!-- Tabela para exibir os dados das chaves -->
+      <table id="keysTable">
+        <thead>
+          <tr>
+            <th>Chave</th>
+            <th>Compra</th>
+            <th>Expiração</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados das chaves serão adicionados aqui dinamicamente -->
+        </tbody>
+      </table>
     </section>
 
     <!-- end workspace section -->
