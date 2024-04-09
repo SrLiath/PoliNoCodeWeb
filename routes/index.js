@@ -53,6 +53,26 @@ router.get('/workspace', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'workspace.html'));
 });
 
+// Rota para lidar com pedidos (Myrequest)
+router.get('/myrequests', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'myrequests.html'));
+});
+
+// Rota para lidar com venda (sale)
+router.get('/sale', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'sale.html'));
+});
+
+// Rota para lidar com meus pedidos (seeregistration)
+router.get('/seeregistration', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'seeregistration.html'));
+});
+
+// Rota para lidar com chaves (seekeys)
+router.get('/seekeys', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'assets', 'html', 'seekeys.html'));
+});
+
 // Rota para lidar com o envio do formulário de registro
 router.post('/register', (req, res) => {
     const { nome, email, senha, confirmar_senha } = req.body;
