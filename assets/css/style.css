@@ -1271,6 +1271,55 @@ sale section
 .purchase_btn_box button:hover {
   background-color: #ff4646;
 }
+
+
+/* styles.css */
+
+/* Estilos para o campo do nome no cartão */
+.card_name {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para o campo do número do cartão */
+.card_number {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para o campo da data de validade */
+.card_expiry {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para o campo do código de segurança */
+.card_cvv {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+
+
+
 /*
 End sale section
 */

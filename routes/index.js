@@ -567,5 +567,36 @@ router.post('/updateRegistration', (req, res) => {
 });
 
 
+// Rota para lidar com a compra do plano
+router.post('/purchase', (req, res) => {
+  // Verificar se o usuário está autenticado
+  if (!req.session.authenticated) {
+    return res.status(401).send('Acesso não autorizado');
+  }
+
+  // Obter os dados do formulário
+  const { nomeCartao, numeroCartao, dataValidade, codigoSeguranca, plano } = req.body;
+
+  // Verificar se o plano selecionado é válido
+  const planosValidos = ['standard', 'premium', 'business'];
+  if (!planosValidos.includes(plano)) {
+    return res.status(400).send('Plano selecionado inválido');
+  }
+
+  // Aqui você pode inserir os dados no banco de dados usando pool.query
+  // Exemplo:
+  pool.query('INSERT INTO tb_compra (nome_cartao, numero_cartao, data_validade, codigo_seguranca, plano) VALUES (?, ?, ?, ?, ?)', [nomeCartao, numeroCartao, dataValidade, codigoSeguranca, plano], (err, results) => {
+    if (err) {
+      console.error('Erro ao inserir detalhes da compra no banco de dados:', err);
+      return res.status(500).send('Erro interno do servidor');
+    }
+
+    // Redirecionar o usuário para alguma página de confirmação ou outra rota
+    res.redirect('/myrequests');
+  });
+});
+
+
+
 
 module.exports = router;

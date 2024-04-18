@@ -6,3 +6,4 @@ Website para comercialização da aplicação de automação de sistemas PoliBot
 2- Criação de rotas atualizar, remover os locais ../
 3- Ajustar Css
 4- Criação pagina de visualizar pedidos (Somente após a pagina de pagamento)
+5- Ajudar pagina de redirecionamento Após criação de conta/login com senha incorreta

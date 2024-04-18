@@ -107,21 +107,55 @@
         <div class="purchase_row">
           <div class="purchase_col-md-8 purchase_col-lg-6">
             <div class="purchase_form_container">
-              <form action="#">
+              <form action="/purchase" method="POST">
                 <div>
-                  <input type="text" placeholder="Nome no Cartão" required />
+                  <label for="plano">Escolha um plano:</label>
+                  <select id="plano" name="plano">
+                    <option value="standard">Plano Standard - R$30,00</option>
+                    <option value="premium">Plano Premium - R$50,00</option>
+                    <option value="business">Plano Business - R$150,00</option>
+                  </select>
                 </div>
                 <div>
-                  <input type="text" placeholder="Número do Cartão" required />
+                  <input
+                    type="text"
+                    placeholder="Nome no Cartão"
+                    required
+                    class="card_name"
+                    name="card_name"
+                  />
                 </div>
                 <div>
-                  <input type="text" placeholder="Data de Validade" required />
+                  <input
+                    type="text"
+                    placeholder="Número do Cartão (XXXX XXXX XXXX XXXX)"
+                    required
+                    class="card_number"
+                    maxlength="19"
+                    pattern="\d{4} \d{4} \d{4} \d{4}"
+                    title="Formato esperado: XXXX XXXX XXXX XXXX"
+                    name="card_number"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Data de Validade (MM/AAAA)"
+                    required
+                    class="card_expiry"
+                    maxlength="7"
+                    pattern="(0[1-9]|1[0-2])\/(20)\d{2}"
+                    title="Formato esperado: MM/AAAA"
+                    name="card_expiry"
+                  />
                 </div>
                 <div>
                   <input
                     type="text"
                     placeholder="Código de Segurança"
                     required
+                    class="card_cvv"
+                    name="card_cvv"
                   />
                 </div>
                 <div class="purchase_btn_box">

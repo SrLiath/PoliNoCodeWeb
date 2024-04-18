@@ -39,3 +39,16 @@ DELIMITER ;
 
 #Visualizar dados da TRIGGER
 SHOW CREATE TRIGGER criar_usuario_tb_key;
+
+#Criação tabela de compra :
+
+CREATE TABLE tb_compra (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_cartao VARCHAR(255) NOT NULL,
+    numero_cartao VARCHAR(16) NOT NULL,
+    data_validade VARCHAR(7) NOT NULL,
+    codigo_seguranca VARCHAR(4) NOT NULL,
+    plano ENUM('standard', 'premium', 'business') NOT NULL,
+    compra_aprovada BOOLEAN DEFAULT true,
+    data_transacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
