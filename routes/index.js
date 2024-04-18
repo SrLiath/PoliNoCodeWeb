@@ -163,9 +163,6 @@ router.get('/seekeys', (req, res) => {
                             <li class="nav-item">
                               <a class="nav-link" href="../html/suport.html">Suporte</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="../html/login.html">Login</a>
-                            </li>
                           </ul>
                         </div>
                       </nav>
@@ -361,9 +358,6 @@ router.get('/seeregistration', (req, res) => {
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../html/suport.html">Suporte</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/login.html">Login</a>
                     </li>
                   </ul>
                 </div>
