@@ -591,7 +591,7 @@ router.post('/purchase', (req, res) => {
       return res.status(500).send('Erro interno do servidor');
     }
 
-    // Redirecionar o usuário para alguma página de confirmação ou outra rota
+    // Redirecionar o usuário
     res.redirect('/myrequests');
   });
 });
