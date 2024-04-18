@@ -583,8 +583,8 @@ router.post('/purchase', (req, res) => {
     return res.status(400).send('Plano selecionado inválido');
   }
 
-  // Aqui você pode inserir os dados no banco de dados usando pool.query
-  // Exemplo:
+  // Inserir os dados no banco de dados usando pool.query
+
   pool.query('INSERT INTO tb_compra (nome_cartao, numero_cartao, data_validade, codigo_seguranca, plano) VALUES (?, ?, ?, ?, ?)', [nomeCartao, numeroCartao, dataValidade, codigoSeguranca, plano], (err, results) => {
     if (err) {
       console.error('Erro ao inserir detalhes da compra no banco de dados:', err);
