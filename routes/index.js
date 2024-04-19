@@ -14,6 +14,32 @@ router.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "register.html"));
 });
 
+// Rota para a página inicial
+router.get("/index", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "assets", "html", "index.html"));
+});
+
+// Rota para a página de sobre
+router.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "assets", "html", "about.html"));
+});
+
+// Rota para a página de preço
+router.get("/price", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "assets", "html", "price.html"));
+});
+
+// Rota para a página de suporte
+router.get("/suport", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "assets", "html", "suport.html"));
+});
+
+// Rota para a página de login
+router.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "assets", "html", "login.html"));
+});
+
+
 // Rota para lidar com o envio do formulário de login
 router.post("/login", (req, res) => {
   const { email, senha } = req.body;
@@ -202,16 +228,16 @@ router.get("/seekeys", (req, res) => {
                             </thead>
                             <tbody>
                               ${results
-                                .map(
-                                  (key) => `
+          .map(
+            (key) => `
                                       <tr>
                                           <td>${key.chave}</td>
                                           <td>${key.compra}</td>
                                           <td>${key.expiracao_key}</td>
                                       </tr>
                                   `
-                                )
-                                .join("")}
+          )
+          .join("")}
                             </tbody>
                           </table>
                         </div>
@@ -754,15 +780,15 @@ router.get("/myrequests", (req, res) => {
                       </thead>
                       <tbody>
                         ${results
-                          .map(
-                            (row) => `
+          .map(
+            (row) => `
                         <tr>
                           <td>${row.plano}</td>
                           <td>${row.data_transacao}</td>
                         </tr>
                         `
-                          )
-                          .join("")}
+          )
+          .join("")}
                       </tbody>
                     </table>
                   </div>

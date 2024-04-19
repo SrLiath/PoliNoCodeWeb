@@ -1,3 +1,10 @@
+-- Criação Banco de dados
+
+create database db_polibotweb
+
+use db_polibotweb;
+
+
 -- Criação da tabela para armazenar informações dos usuários
 CREATE TABLE IF NOT EXISTS tb_usuario (
     id              INT NOT NULL AUTO_INCREMENT,
