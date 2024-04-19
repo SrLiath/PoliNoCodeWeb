@@ -103,22 +103,24 @@
         <div class="purchase_row">
           <div class="purchase_col-md-8 purchase_col-lg-6">
             <div class="purchase_form_container">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Plano</th>
-                    <th>Data da Transação</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  ${results .map( (row) => `
-                  <tr>
-                    <td>${row.plano}</td>
-                    <td>${row.data_transacao}</td>
-                  </tr>
-                  ` ) .join("")}
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Plano</th>
+                      <th>Data da Transação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${results .map( (row) => `
+                    <tr>
+                      <td>${row.plano}</td>
+                      <td>${row.data_transacao}</td>
+                    </tr>
+                    ` ) .join("")}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

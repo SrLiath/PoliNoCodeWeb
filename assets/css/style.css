@@ -1272,7 +1272,6 @@ sale section
   background-color: #ff4646;
 }
 
-
 /* styles.css */
 
 /* Estilos para o campo do nome no cartão */
@@ -1315,11 +1314,6 @@ sale section
   font-size: 16px;
 }
 
-
-
-
-
-
 /*
 End sale section
 */
@@ -1332,8 +1326,6 @@ End sale section
   padding: 0 0 0 300px;
 }
 /*End Workspace*/
-
-
 
 /*
 sale section
@@ -1420,6 +1412,46 @@ sale section
 /*
 End sale section
 */
+
+/*seeregistration section*/
+.seeregistration_sec {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto 7% 40%;
+}
+
+.seeregistration_sec h2 {
+  text-align: center;
+}
+
+.seeregistration_sec form {
+  margin-top: 20px;
+}
+
+.seeregistration_sec .form-group {
+  margin-bottom: 15px;
+}
+
+.seeregistration_sec label {
+  font-size: 16px;
+}
+
+.seeregistration_sec input[type="text"],
+.seeregistration_sec input[type="email"],
+.seeregistration_sec input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.seeregistration_sec button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/*end seeregistration section*/
 
 /* footer section*/
 .footer_section {

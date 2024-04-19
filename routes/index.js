@@ -101,7 +101,7 @@ router.get("/seekeys", (req, res) => {
                 <meta name="description" content="" />
                 <meta name="author" content="" />
 
-                <title>Polibot - Minhas Chaves</title>
+                <title>Polibot</title>
 
                 <!-- bootstrap core css -->
                 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
@@ -292,254 +292,250 @@ router.get("/seeregistration", (req, res) => {
 
       // Renderize o template HTML com os detalhes do usuário
       const registrationHtml = `
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <!-- Basic -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Mobile Metas -->
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <!-- Site Metas -->
-        <link rel="icon" href="../images/logo_name.png" type="image/gif" />
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-    
-        <title>Polibot</title>
-    
-        <!-- bootstrap core css -->
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-    
-        <!-- fonts style -->
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- font awesome style -->
-        <link href="../css/font-awesome.min.css" rel="stylesheet" />
-    
-        <!-- Custom styles for this template -->
-        <link href="../css/style.css" rel="stylesheet" />
-        <!-- responsive style -->
-        <link href="../css/responsive.css" rel="stylesheet" />
-      </head>
-    
-      <body class="sub_page">
-        <div class="hero_area">
-          <!-- header section strats -->
-          <header class="header_section">
-            <div class="container-fluid">
-              <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="../html/index.html">
-                  <span>
-                    <img src="../images/logo_name.png" alt="Logo" />
-                    Polibot</span
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <!-- Basic -->
+          <meta charset="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <!-- Mobile Metas -->
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+          <!-- Site Metas -->
+          <link rel="icon" href="../images/logo_name.png" type="image/gif" />
+          <meta name="keywords" content="" />
+          <meta name="description" content="" />
+          <meta name="author" content="" />
+      
+          <title>Polibot</title>
+      
+          <!-- bootstrap core css -->
+          <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+      
+          <!-- fonts style -->
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+          />
+      
+          <!-- font awesome style -->
+          <link href="../css/font-awesome.min.css" rel="stylesheet" />
+      
+          <!-- Custom styles for this template -->
+          <link href="../css/style.css" rel="stylesheet" />
+          <!-- responsive style -->
+          <link href="../css/responsive.css" rel="stylesheet" />
+        </head>
+      
+        <body class="sub_page">
+          <div class="hero_area">
+            <!-- header section strats -->
+            <header class="header_section">
+              <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand" href="../html/index.html">
+                    <span>
+                      <img src="../images/logo_name.png" alt="Logo" />
+                      Polibot</span
+                    >
+                  </a>
+      
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                   >
-                </a>
-    
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class=""> </span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="../html/index.html"
-                        >Home <span class="sr-only">(current)</span></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/about.html"> Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/price.html">Preços</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/suport.html">Suporte</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </header>
-          <!-- end header section -->
-        </div>
-    
-        <!-- seeregistration section -->
-        <section class="selection_panel">
-          <div class="selection_panel_container">
-            <ul>
-              <li><a href="/seeregistration">Ver Cadastro</a></li>
-              <li><a href="/seekeys">Minhas Chaves</a></li>
-              <li><a href="/myrequests">Meus Pedidos</a></li>
-              <li><a href="/sale">Adquirir Plano</a></li>
-            </ul>
+                    <span class=""> </span>
+                  </button>
+      
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html"
+                          >Home <span class="sr-only">(current)</span></a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html"> Sobre</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/price.html">Preços</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/suport.html">Suporte</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </header>
+            <!-- end header section -->
           </div>
-          <div class="registration_container">
-            <div class="registration_heading_container">
-              <h2>Ver Registro</h2>
-              <br />
+      
+          <!-- seeregistration section -->
+      
+          <section class="selection_panel">
+            <div class="selection_panel_container">
+              <ul>
+                <li><a href="/seeregistration">Ver Cadastro</a></li>
+                <li><a href="/seekeys">Minhas Chaves</a></li>
+                <li><a href="/myrequests">Meus Pedidos</a></li>
+                <li><a href="/sale">Adquirir Plano</a></li>
+              </ul>
             </div>
-            <div class="registration_row">
-              <div class="registration_col-md-8 registration_col-lg-6">
-                <div class="registration_form_container">
-                  <form action="/updateRegistration" method="POST">
-                    <div class="form-group">
-                      <label for="nome">Nome</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="nome"
-                        name="nome"
-                        value="${results[0].nome}"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        value="${results[0].email}"
-                        readonly
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="novaSenha">Nova Senha</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="novaSenha"
-                        name="novaSenha"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="confirmarSenha">Confirmar Nova Senha</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="confirmarSenha"
-                        name="confirmarSenha"
-                      />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Atualizar</button>
-                  </form>
-                </div>
+          </section>
+      
+            <section class="seeregistration_sec">
+              <div>
+                <h2>Meus Dados</h2>
+                <br />
+                <form action="/updateRegistration" method="POST">
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      name="nome"
+                      value="${results[0].nome}"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      value="${results[0].email}"
+                      readonly
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="novaSenha">Nova Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="novaSenha"
+                      name="novaSenha"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Nova Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="confirmarSenha"
+                      name="confirmarSenha"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Atualizar</button>
+                </form>
               </div>
             </div>
-          </div>
-        </section>
-    
-        <!-- seeregistration section -->
-    
-        <!-- info section -->
-    
-        <section class="info_section layout_padding2">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="info_contact">
-                  <h4>Endereço</h4>
-                  <div class="contact_link_box">
-                    <!-- <a href=""> -->
+          </section>
+      
+          <!-- end seeregistration section -->
+      
+          <!-- info section -->
+      
+          <section class="info_section layout_padding2">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="info_contact">
+                    <h4>Endereço</h4>
+                    <div class="contact_link_box">
+                      <!-- <a href=""> -->
+                      <a>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span> São Paulo - SP </span>
+                      </a>
+                      <a>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span> Telefone +55 (11) 90000-0000 </span>
+                      </a>
+                      <a>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span> Polibot@gmail.com </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info_social">
                     <a>
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      <span> São Paulo - SP </span>
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a>
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                      <span> Telefone +55 (11) 90000-0000 </span>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                     <a>
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                      <span> Polibot@gmail.com </span>
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
-                <div class="info_social">
-                  <a>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                  <a>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-    
-              <div class="col-md-3">
-                <div class="info_link_box">
-                  <h4>Links</h4>
-                  <div class="info_links">
-                    <a class="active" href="../html/index.html">
-                      <img src="../images/nav-bullet.png" alt="" />
-                      Home
-                    </a>
-                    <a class="" href="about.html">
-                      <img src="../images/nav-bullet.png" alt="" />
-                      Sobre
-                    </a>
-                    <a class="" href="price.html">
-                      <img src="../images/nav-bullet.png" alt="" />
-                      Preços
-                    </a>
-                    <a class="" href="login.html">
-                      <img src="../images/nav-bullet.png" alt="" />
-                      Login
-                    </a>
-                    <a class="" href="suport.html">
-                      <img src="../images/nav-bullet.png" alt="" />
-                      Suporte
-                    </a>
+      
+                <div class="col-md-3">
+                  <div class="info_link_box">
+                    <h4>Links</h4>
+                    <div class="info_links">
+                      <a class="active" href="../html/index.html">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Home
+                      </a>
+                      <a class="" href="about.html">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Sobre
+                      </a>
+                      <a class="" href="price.html">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Preços
+                      </a>
+                      <a class="" href="login.html">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Login
+                      </a>
+                      <a class="" href="suport.html">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Suporte
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-    
-        <!-- end info section -->
-    
-        <!-- footer section -->
-        <footer class="footer_section">
-          <div class="container">
-            <p>
-              &copy; <span id="displayYear"></span> Todos os direitos reservados por
-              <a href="../html/index.html">Polibot</a>
-            </p>
-          </div>
-        </footer>
-        <!-- footer section -->
-    
-        <!-- jQery -->
-        <script src="../../js/jquery-3.4.1.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="../js/bootstrap.js"></script>
-        <!-- custom js -->
-        <script src="../js/custom.js"></script>
-      </body>
-    </html>
-    
+          </section>
+      
+          <!-- end info section -->
+      
+          <!-- footer section -->
+          <footer class="footer_section">
+            <div class="container">
+              <p>
+                &copy; <span id="displayYear"></span> Todos os direitos reservados por
+                <a href="../html/index.html">Polibot</a>
+              </p>
+            </div>
+          </footer>
+          <!-- footer section -->
+      
+          <!-- jQery -->
+          <script src="../../js/jquery-3.4.1.min.js"></script>
+          <!-- bootstrap js -->
+          <script src="../js/bootstrap.js"></script>
+          <!-- custom js -->
+          <script src="../js/custom.js"></script>
+        </body>
+      </html>
     `;
 
       // Envie o HTML como resposta
