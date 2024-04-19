@@ -1,7 +1,7 @@
 {
   "name": "teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website para comercialização da aplicação de automação de sistemas PoliBot.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,6 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {}
 }
