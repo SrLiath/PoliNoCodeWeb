@@ -46,7 +46,8 @@ router.post("/login", (req, res) => {
 
   // Verificar se o email e a senha estão presentes
   if (!email || !senha) {
-    return res.status(400).send("Por favor, preencha todos os campos");
+    // Se algum campo estiver vazio, exibir mensagem de erro na mesma página
+    return res.status(400).redirect("/login?mensagem=Preencha todos os campos");
   }
 
   // Consultar o banco de dados para verificar as credenciais do usuário
@@ -61,13 +62,15 @@ router.post("/login", (req, res) => {
 
       // Verificar se o usuário foi encontrado
       if (results.length === 0) {
-        return res.status(401).send("Email ou senha incorretos");
+        // Se não encontrou usuário, exibir mensagem de erro na mesma página
+        return res.status(401).redirect("/login?mensagem=Email ou senha incorretos");
       }
 
       // Definir a sessão de autenticação
       req.session.authenticated = true;
       req.session.user = results[0]; // Armazenar informações do usuário na sessão
 
+      // Se as credenciais estiverem corretas, redirecionar para a página de workspace
       return res.redirect("/workspace");
     }
   );

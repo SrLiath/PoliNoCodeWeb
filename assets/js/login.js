@@ -3,6 +3,6 @@ function exibirMensagemErro() {
     const urlParams = new URLSearchParams(window.location.search);
     const mensagem = urlParams.get('mensagem');
     if (mensagem) {
-        document.getElementById('mensagemErro').innerText = mensagem;
+        alert(mensagem); // Exibe mensagem de erro como um alerta
     }
 }
