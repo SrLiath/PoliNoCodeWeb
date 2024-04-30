@@ -249,7 +249,78 @@ router.get("/seekeys", (req, res) => {
                   </div>
                 </section>
                 <!-- End See Keys section -->
+                <!-- info section -->
 
+                <section class="info_section layout_padding2">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="info_contact">
+                          <h4>Endereço</h4>
+                          <div class="contact_link_box">
+                            <!-- <a href=""> -->
+                            <a>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              <span> São Paulo - SP </span>
+                            </a>
+                            <a>
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                              <span> Telefone +55 (11) 90000-0000 </span>
+                            </a>
+                            <a>
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span> Polibot@gmail.com </span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="info_social">
+                          <a>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                          <a>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+            
+                      <div class="col-md-3">
+                        <div class="info_link_box">
+                          <h4>Links</h4>
+                          <div class="info_links">
+                            <a class="active" href="/index">
+                              <img src="../images/nav-bullet.png" alt="" />
+                              Home
+                            </a>
+                            <a class="" href="/about">
+                              <img src="../images/nav-bullet.png" alt="" />
+                              Sobre
+                            </a>
+                            <a class="" href="/price">
+                              <img src="../images/nav-bullet.png" alt="" />
+                              Preços
+                            </a>
+                            <a class="" href="/login">
+                              <img src="../images/nav-bullet.png" alt="" />
+                              Login
+                            </a>
+                            <a class="" href="/suport">
+                              <img src="../images/nav-bullet.png" alt="" />
+                              Suporte
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            
+                <!-- end info section -->
                 <!-- footer section -->
                 <footer class="footer_section">
                   <div class="container">
@@ -271,6 +342,7 @@ router.get("/seekeys", (req, res) => {
 });
 
 // Rota para lidar com o envio do formulário de registro
+
 router.post("/register", (req, res) => {
   const { nome, email, senha, confirmar_senha } = req.body;
 
@@ -294,10 +366,12 @@ router.post("/register", (req, res) => {
         console.error("Erro ao inserir usuário:", err);
         return res.status(500).send("Erro interno do servidor");
       }
-      return res.status(200).send("Usuário cadastrado com sucesso");
+      // Redirecionar o usuário para a página de login com uma mensagem na URL
+      return res.redirect("/login?mensagem=Cadastro efetuado com sucesso. \nFaça o login para acessar sua conta.");
     }
   );
 });
+
 
 // Rota para lidar com a visualização e atualização do registro do usuário
 router.get("/seeregistration", (req, res) => {
@@ -800,7 +874,78 @@ router.get("/myrequests", (req, res) => {
             </div>
           </section>
           <!-- End See Keys section -->
+          <!-- info section -->
+
+          <section class="info_section layout_padding2">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="info_contact">
+                    <h4>Endereço</h4>
+                    <div class="contact_link_box">
+                      <!-- <a href=""> -->
+                      <a>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span> São Paulo - SP </span>
+                      </a>
+                      <a>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span> Telefone +55 (11) 90000-0000 </span>
+                      </a>
+                      <a>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span> Polibot@gmail.com </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info_social">
+                    <a>
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
       
+                <div class="col-md-3">
+                  <div class="info_link_box">
+                    <h4>Links</h4>
+                    <div class="info_links">
+                      <a class="active" href="/index">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Home
+                      </a>
+                      <a class="" href="/about">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Sobre
+                      </a>
+                      <a class="" href="/price">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Preços
+                      </a>
+                      <a class="" href="/login">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Login
+                      </a>
+                      <a class="" href="/suport">
+                        <img src="../images/nav-bullet.png" alt="" />
+                        Suporte
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- end info section -->
           <!-- footer section -->
           <footer class="footer_section">
             <div class="container">
