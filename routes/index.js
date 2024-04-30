@@ -153,7 +153,7 @@ router.get("/seekeys", (req, res) => {
                   <header class="header_section">
                     <div class="container-fluid">
                       <nav class="navbar navbar-expand-lg custom_nav-container">
-                        <a class="navbar-brand" href="../html/index.html">
+                        <a class="navbar-brand" href="/index">
                           <span>
                             <img src="../images/logo_name.png" alt="Logo" />
                             Polibot</span
@@ -178,18 +178,18 @@ router.get("/seekeys", (req, res) => {
                         >
                           <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                              <a class="nav-link" href="../html/index.html"
+                              <a class="nav-link" href="/index"
                                 >Home <span class="sr-only">(current)</span></a
                               >
                             </li>
                             <li class="nav-item active">
-                              <a class="nav-link" href="../html/about.html"> Sobre</a>
+                              <a class="nav-link" href="/about"> Sobre</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="../html/price.html">Preços</a>
+                              <a class="nav-link" href="/price">Preços</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="../html/suport.html">Suporte</a>
+                              <a class="nav-link" href="/suport">Suporte</a>
                             </li>
                           </ul>
                         </div>
@@ -252,7 +252,7 @@ router.get("/seekeys", (req, res) => {
                   <div class="container">
                     <p>
                       &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                      <a href="../html/index.html">Polibot </a>
+                      <a href="/index">Polibot </a>
                     </p>
                     <br />
                   </div>
@@ -383,18 +383,18 @@ router.get("/seeregistration", (req, res) => {
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="../html/index.html"
+                        <a class="nav-link" href="/index"
                           >Home <span class="sr-only">(current)</span></a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/about.html"> Sobre</a>
+                        <a class="nav-link" href="/about"> Sobre</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/price.html">Preços</a>
+                        <a class="nav-link" href="/price">Preços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/suport.html">Suporte</a>
+                        <a class="nav-link" href="/suport">Suporte</a>
                       </li>
                     </ul>
                   </div>
@@ -514,23 +514,23 @@ router.get("/seeregistration", (req, res) => {
                   <div class="info_link_box">
                     <h4>Links</h4>
                     <div class="info_links">
-                      <a class="active" href="../html/index.html">
+                      <a class="active" href="/index">
                         <img src="../images/nav-bullet.png" alt="" />
                         Home
                       </a>
-                      <a class="" href="about.html">
+                      <a class="" href="/about">
                         <img src="../images/nav-bullet.png" alt="" />
                         Sobre
                       </a>
-                      <a class="" href="price.html">
+                      <a class="" href="/price.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Preços
                       </a>
-                      <a class="" href="login.html">
+                      <a class="" href="/login">
                         <img src="../images/nav-bullet.png" alt="" />
                         Login
                       </a>
-                      <a class="" href="suport.html">
+                      <a class="" href="/suport">
                         <img src="../images/nav-bullet.png" alt="" />
                         Suporte
                       </a>
@@ -548,14 +548,14 @@ router.get("/seeregistration", (req, res) => {
             <div class="container">
               <p>
                 &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                <a href="../html/index.html">Polibot</a>
+                <a href="/index">Polibot</a>
               </p>
             </div>
           </footer>
           <!-- footer section -->
       
           <!-- jQery -->
-          <script src="../../js/jquery-3.4.1.min.js"></script>
+          <script src="../js/jquery-3.4.1.min.js"></script>
           <!-- bootstrap js -->
           <script src="../js/bootstrap.js"></script>
           <!-- custom js -->
@@ -683,7 +683,7 @@ router.get("/myrequests", (req, res) => {
           <meta name="description" content="" />
           <meta name="author" content="" />
       
-          <title>Polibot - Minhas Chaves</title>
+          <title>Polibot</title>
       
           <!-- bootstrap core css -->
           <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
@@ -731,18 +731,18 @@ router.get("/myrequests", (req, res) => {
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/index.html"
+                        <a class="nav-link" href="/index"
                           >Home <span class="sr-only">(current)</span></a
                         >
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="../html/about.html"> Sobre</a>
+                        <a class="nav-link" href="/about"> Sobre</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/price.html">Preços</a>
+                        <a class="nav-link" href="/price">Preços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="../html/suport.html">Suporte</a>
+                        <a class="nav-link" href="/suport">Suporte</a>
                       </li>
                     </ul>
                   </div>
@@ -803,7 +803,7 @@ router.get("/myrequests", (req, res) => {
             <div class="container">
               <p>
                 &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                <a href="../html/index.html">Polibot </a>
+                <a href="/index">Polibot </a>
               </p>
               <br />
             </div>
