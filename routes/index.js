@@ -15,33 +15,33 @@ router.get("/register", (req, res) => {
 });
 
 // Rota para a página inicial
-router.get("/index", (req, res) => {
+router.get("./index.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "index.html"));
 });
 
 // Rota para a página de sobre
-router.get("/about", (req, res) => {
+router.get("./about.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "about.html"));
 });
 
 // Rota para a página de preço
-router.get("/price", (req, res) => {
+router.get("./price.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "price.html"));
 });
 
 // Rota para a página de suporte
-router.get("/suport", (req, res) => {
+router.get("./suport.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "suport.html"));
 });
 
 // Rota para a página de login
-router.get("/login", (req, res) => {
+router.get("./login.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "assets", "html", "login.html"));
 });
 
 
 // Rota para lidar com o envio do formulário de login
-router.post("/login", (req, res) => {
+router.post("./login.html", (req, res) => {
   const { email, senha } = req.body;
 
   // Verificar se o email e a senha estão presentes
@@ -156,7 +156,7 @@ router.get("/seekeys", (req, res) => {
                   <header class="header_section">
                     <div class="container-fluid">
                       <nav class="navbar navbar-expand-lg custom_nav-container">
-                        <a class="navbar-brand" href="/index">
+                        <a class="navbar-brand" href="./index.html">
                           <span>
                             <img src="../images/logo_name.png" alt="Logo" />
                             Polibot</span
@@ -181,18 +181,18 @@ router.get("/seekeys", (req, res) => {
                         >
                           <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                              <a class="nav-link" href="/index"
+                              <a class="nav-link" href="./index.html"
                                 >Home <span class="sr-only">(current)</span></a
                               >
                             </li>
                             <li class="nav-item active">
-                              <a class="nav-link" href="/about"> Sobre</a>
+                              <a class="nav-link" href="./about.html"> Sobre</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="/price">Preços</a>
+                              <a class="nav-link" href="./price.html">Preços</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="/suport">Suporte</a>
+                              <a class="nav-link" href="./suport.html">Suporte</a>
                             </li>
                           </ul>
                         </div>
@@ -206,10 +206,10 @@ router.get("/seekeys", (req, res) => {
                 <section class="selection_panel">
                   <div class="selection_panel_container">
                     <ul>
-                      <li><a href="/seeregistration">Ver Cadastro</a></li>
-                      <li><a href="/seekeys">Minhas Chaves</a></li>
-                      <li><a href="/myrequests">Meus Pedidos</a></li>
-                      <li><a href="/sale">Adquirir Plano</a></li>
+                      <li><a href="./seeregistration.html">Ver Cadastro</a></li>
+                      <li><a href="./seekeys.html">Minhas Chaves</a></li>
+                      <li><a href="./myrequests.html">Meus Pedidos</a></li>
+                      <li><a href="./sale.html">Adquirir Plano</a></li>
                     </ul>
                   </div>
 
@@ -293,23 +293,23 @@ router.get("/seekeys", (req, res) => {
                         <div class="info_link_box">
                           <h4>Links</h4>
                           <div class="info_links">
-                            <a class="active" href="/index">
+                            <a class="active" href="./index.html">
                               <img src="../images/nav-bullet.png" alt="" />
                               Home
                             </a>
-                            <a class="" href="/about">
+                            <a class="" href="./about.html">
                               <img src="../images/nav-bullet.png" alt="" />
                               Sobre
                             </a>
-                            <a class="" href="/price">
+                            <a class="" href="./price.html">
                               <img src="../images/nav-bullet.png" alt="" />
                               Preços
                             </a>
-                            <a class="" href="/login">
+                            <a class="" href="./login.html">
                               <img src="../images/nav-bullet.png" alt="" />
                               Login
                             </a>
-                            <a class="" href="/suport">
+                            <a class="" href="./suport.html">
                               <img src="../images/nav-bullet.png" alt="" />
                               Suporte
                             </a>
@@ -326,7 +326,7 @@ router.get("/seekeys", (req, res) => {
                   <div class="container">
                     <p>
                       &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                      <a href="/index">Polibot </a>
+                      <a href="./index.html">Polibot </a>
                     </p>
                     <br />
                   </div>
@@ -460,18 +460,18 @@ router.get("/seeregistration", (req, res) => {
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="/index"
+                        <a class="nav-link" href="./index.html"
                           >Home <span class="sr-only">(current)</span></a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/about"> Sobre</a>
+                        <a class="nav-link" href="./about.html"> Sobre</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/price">Preços</a>
+                        <a class="nav-link" href="./price.html">Preços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/suport">Suporte</a>
+                        <a class="nav-link" href="./suport.html">Suporte</a>
                       </li>
                     </ul>
                   </div>
@@ -486,10 +486,10 @@ router.get("/seeregistration", (req, res) => {
           <section class="selection_panel">
             <div class="selection_panel_container">
               <ul>
-                <li><a href="/seeregistration">Ver Cadastro</a></li>
-                <li><a href="/seekeys">Minhas Chaves</a></li>
-                <li><a href="/myrequests">Meus Pedidos</a></li>
-                <li><a href="/sale">Adquirir Plano</a></li>
+                <li><a href="./seeregistration.html">Ver Cadastro</a></li>
+                <li><a href="./seekeys.html">Minhas Chaves</a></li>
+                <li><a href="./myrequests.html">Meus Pedidos</a></li>
+                <li><a href="./sale.html">Adquirir Plano</a></li>
               </ul>
             </div>
           </section>
@@ -591,11 +591,11 @@ router.get("/seeregistration", (req, res) => {
                   <div class="info_link_box">
                     <h4>Links</h4>
                     <div class="info_links">
-                      <a class="active" href="/index">
+                      <a class="active" href="./index.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Home
                       </a>
-                      <a class="" href="/about">
+                      <a class="" href="./about.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Sobre
                       </a>
@@ -603,11 +603,11 @@ router.get("/seeregistration", (req, res) => {
                         <img src="../images/nav-bullet.png" alt="" />
                         Preços
                       </a>
-                      <a class="" href="/login">
+                      <a class="" href="./login.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Login
                       </a>
-                      <a class="" href="/suport">
+                      <a class="" href="./suport.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Suporte
                       </a>
@@ -625,7 +625,7 @@ router.get("/seeregistration", (req, res) => {
             <div class="container">
               <p>
                 &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                <a href="/index">Polibot</a>
+                <a href="./index.html">Polibot</a>
               </p>
             </div>
           </footer>
@@ -808,18 +808,18 @@ router.get("/myrequests", (req, res) => {
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="/index"
+                        <a class="nav-link" href="./index.html"
                           >Home <span class="sr-only">(current)</span></a
                         >
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="/about"> Sobre</a>
+                        <a class="nav-link" href="./about.html"> Sobre</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/price">Preços</a>
+                        <a class="nav-link" href="./price.html">Preços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/suport">Suporte</a>
+                        <a class="nav-link" href="./suport.html">Suporte</a>
                       </li>
                     </ul>
                   </div>
@@ -833,10 +833,10 @@ router.get("/myrequests", (req, res) => {
           <section class="selection_panel">
             <div class="selection_panel_container">
               <ul>
-                <li><a href="/seeregistration">Ver Cadastro</a></li>
-                <li><a href="/seekeys">Minhas Chaves</a></li>
-                <li><a href="/myrequests">Meus Pedidos</a></li>
-                <li><a href="/sale">Adquirir Plano</a></li>
+                <li><a href="./seeregistration.html">Ver Cadastro</a></li>
+                <li><a href="./seekeys.html">Minhas Chaves</a></li>
+                <li><a href="./myrequests.html">Meus Pedidos</a></li>
+                <li><a href="./sale.html">Adquirir Plano</a></li>
               </ul>
             </div>
       
@@ -918,23 +918,23 @@ router.get("/myrequests", (req, res) => {
                   <div class="info_link_box">
                     <h4>Links</h4>
                     <div class="info_links">
-                      <a class="active" href="/index">
+                      <a class="active" href="./index.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Home
                       </a>
-                      <a class="" href="/about">
+                      <a class="" href="./about.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Sobre
                       </a>
-                      <a class="" href="/price">
+                      <a class="" href="./price.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Preços
                       </a>
-                      <a class="" href="/login">
+                      <a class="" href="./login.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Login
                       </a>
-                      <a class="" href="/suport">
+                      <a class="" href="./suport.html">
                         <img src="../images/nav-bullet.png" alt="" />
                         Suporte
                       </a>
@@ -951,7 +951,7 @@ router.get("/myrequests", (req, res) => {
             <div class="container">
               <p>
                 &copy; <span id="displayYear"></span> Todos os direitos reservados por
-                <a href="/index">Polibot </a>
+                <a href="./index.html">Polibot </a>
               </p>
               <br />
             </div>
